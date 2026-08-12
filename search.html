@@ -1,0 +1,81 @@
+<!doctype html>
+    <html lang="bg">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Резултати от търсенето</title>
+        </head>
+        <body>  
+            <header>BookCycle</header>
+            <main>
+                <h1>Резултати от търсенето</h1>
+                <p> Резултати за: <strong>Хари Потър</strong></p>
+                 <form action="search.html" method="get" >
+                    <label for="search-bar"> Търси </label>
+                    <input type="search" name="search-query" id="search-bar">
+                    <button type="submit"> Намери книга</button>
+
+                     <section id="filter">
+                    <h2>Филтрирай резултатите</h2>
+                <fieldset>
+                    <legend>Вид на размяната</legend>
+                    <label for="sale" >Продажба</label>
+                    <input type="checkbox" id ="sale" name="offer-type" value="sale">
+                    <label for="exchange">Размяна</label>
+                    <input type="checkbox" id ="exchange" name="offer-type" value="exchange">
+                    <label for="giveaway">Подарявам</label>
+                    <input type="checkbox" id ="giveaway" name="offer-type" value="giveaway">    
+                  </fieldset>    
+                  
+                  <fieldset>
+                    <legend>Състояние</legend>
+                    <label for="new">Нова</label>
+                    <input type="checkbox" id ="new" name="condition" value="new">
+                    <label for="used">Запазена</label>
+                    <input type="checkbox" id ="used" name="condition" value="used">
+                    <label for="with-comments">Със забележки</label>
+                    <input type="checkbox" id ="with-comments" name="condition" value="with-comments">  
+                  </fieldset>  
+                   <fieldset>
+                    <legend>Град</legend>
+                        <label for="city">Избери град</label>
+                        <select id="city" name="city">
+                            <option value="">Всички градове</option>
+                            <option value="sofia">София</option>
+                            <option value="plovdiv">Пловдив</option>
+                            <option value="varna">Варна</option>
+                         </select>
+                    </fieldset>
+                    <button type="submit">Филтрирай резултатите</button>
+                </section>
+                </form>
+                <section id="results">
+                    <h2>Резултати</h2>
+                    <article>
+                        <h3>Хари Потър и Стаята на тайните</h3>
+                        <p><strong>Автор:</strong> Дж. К. Роулинг</p>
+                        <p><strong>Град:</strong> София</p>
+                        <p><strong>Тип оферта:</strong> Продавам</p>
+                        <a href="listing.html">Виж повече</a>
+                    </article>
+
+                    <article>
+                        <h3>Хари Потър и Философският камък</h3>
+                        <p><strong>Автор:</strong> Дж. К. Роулинг</p>
+                        <p><strong>Град:</strong> Варна</p>
+                        <p><strong>Тип оферта:</strong> Подарявам</p>
+                        <a href="listing.html">Виж повече</a>
+                    </article>
+
+                    <article>
+                        <h3>Хари Потър и Огненият бокал</h3>
+                        <p><strong>Автор:</strong> Дж. К. Роулинг</p>
+                        <p><strong>Град:</strong> Пловдив</p>
+                        <p><strong>Тип оферта:</strong> Разменям</p>
+                        <a href="listing.html">Виж повече</a>
+                    </article>
+                </section>
+            </main>
+            <footer>BookCycle</footer>    
+        </body>    
+    </html>
